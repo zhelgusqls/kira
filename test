@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+void main(){
+  int n,m, sum,close,a,b,c;
+  
+  scanf("%d %d",&n, &m);
+  
+  int array[n] ={};
+  for(int i=0; i<n;i++){
+    scanf("%d", array[n]);
+  }
+  
+  for(i = 0;i<n-2;i++){
+    for(int j=i+1;j<n-1;j++){
+      for(int z=j+1;z<n;z++){
+  sum = array[i]+array[j]+array[z];
+  if(sum<=m){
+    if(sum>close){
+     a = array[i];
+     b=array[j];
+     c=array[z];
+     close = sum;
+         }
+      } 
+    }
+  }
+}
+}
